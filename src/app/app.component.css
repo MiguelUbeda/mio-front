@@ -1,0 +1,87 @@
+/* Estilos generales */
+
+  h1, h2 {
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: #185ea8;
+    text-decoration: none;
+  }
+  
+
+  
+  /* Estilos de navegación */
+  nav {
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  
+  nav a {
+    color: #014186;
+    margin-right: 15rem;
+    margin-top: 2rem;
+  }
+  
+  nav a:hover {
+    color: #185ea8;
+    text-decoration: underline;
+  }
+  
+  /* Estilos de botones */
+  button {
+    background-color: #014186;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos de formulario */
+  form {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Estilos de tabla */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  tr {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  td {
+    padding: 10px;
+  }

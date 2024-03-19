@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #f0f0f0;
+    font-family: Helvetica, Sans-Serif;
+  }
+
+/* Navigation styles */
+nav {
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.nav-button {
+  color: #014186;
+  margin-right: 8rem;
+  margin-top: 1.8rem;
+  font-size: 1.2rem;
+  background-color: #eeeeee;
+}
+
+nav a:hover {
+  color: #185ea8;
+  text-decoration: underline;
+
+}
+
+.nav-button:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+

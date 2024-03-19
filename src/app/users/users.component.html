@@ -1,0 +1,30 @@
+<div class="users-container">
+  <h2>Users</h2>
+  <!-- Button to remove multiples user -->
+  <button (click)="deleteSelectedUsers()"> <i class="fas fa-times"></i> Eliminar seleccionados</button>
+  <!-- List of users and buttons to show their articles and CRUD -->
+  <div class="table-container">
+    <table class="user-table">
+      <tr>
+        <th></th>
+        <th>Email</th>
+        <th>Nombre de usuario</th>
+        <th></th>
+      </tr>
+      <tr *ngFor="let user of users">
+        <td><input type="checkbox" (change)="toggleUserSelection(user)"></td>
+        <td class="url-text">{{user.email}}</td>
+        <td class="url-text">{{user.username}}</td>
+        <td>
+          <button (click)="showEditForm(user)">
+            <i class="fas fa-edit"></i>
+          </button>
+
+          <button (click)="deleteUser(user)">
+            <i class="fas fa-trash"></i>
+          </button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

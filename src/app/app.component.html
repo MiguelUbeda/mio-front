@@ -1,0 +1,9 @@
+<nav>
+  <div class="nav-container">
+  <a *ngIf="!(isAuthenticated())" class="nav-button" routerLink="/login">
+    <i class="fas fa-user"></i> Acceder
+  </a>
+  <app-logout *ngIf="isAuthenticated()" class="nav-button"></app-logout>
+  </div>
+</nav>
+<router-outlet></router-outlet>

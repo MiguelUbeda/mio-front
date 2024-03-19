@@ -1,0 +1,12 @@
+
+.edit-user-content form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .edit-user-content form mat-form-field {
+    flex: 1;
+    margin-right: 16px;
+  }
+  
