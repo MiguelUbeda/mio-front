@@ -13,7 +13,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { EditUserComponent } from './edit-user/edit-user.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import { EditUserComponent } from './edit-user/edit-user.component';
     LoginComponent,
     UsersComponent,
     LogoutComponent,
-    EditUserComponent
+    EditUserComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,8 @@ import { EditUserComponent } from './edit-user/edit-user.component';
     BrowserAnimationsModule,
     MatDialogModule,
     MatButtonModule,
-    MatInputModule
+    MatInputModule,
+    MatSnackBarModule
   ],
   providers: [ {
     provide: HTTP_INTERCEPTORS,

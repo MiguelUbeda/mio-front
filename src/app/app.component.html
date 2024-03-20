@@ -1,9 +1,17 @@
 <nav>
   <div class="nav-container">
-  <a *ngIf="!(isAuthenticated())" class="nav-button" routerLink="/login">
-    <i class="fas fa-user"></i> Acceder
-  </a>
-  <app-logout *ngIf="isAuthenticated()" class="nav-button"></app-logout>
+    <a *ngIf="!(isAuthenticated())" class="nav-button" routerLink="/login">
+      <i class="fas fa-user"></i> Acceder
+    </a>
+    <ng-container *ngIf="isAuthenticated()">
+      <a class="nav-button" routerLink="/users">
+        <i class="fas fa-home"></i> Home
+      </a>
+      <a class="nav-button" routerLink="/profile">
+        <i class="fas fa-user"></i> Perfil
+      </a>
+      <app-logout class="nav-button"></app-logout>
+    </ng-container>  
   </div>
 </nav>
 <router-outlet></router-outlet>

@@ -10,35 +10,6 @@
     text-decoration: none;
   }
   
-
-  
-  /* Estilos de navegación */
-  nav {
-    padding: 1rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-  
-  .nav-container {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-  }
-  
-  nav a {
-    color: #014186;
-    margin-right: 15rem;
-    margin-top: 2rem;
-  }
-  
-  nav a:hover {
-    color: #185ea8;
-    text-decoration: underline;
-  }
-  
   /* Estilos de botones */
   button {
     background-color: #014186;
@@ -52,6 +23,36 @@
   
   button:hover {
     background-color: #0056b3;
+  }
+
+  /* Navigation styles */
+  nav {
+    display: flex;
+    margin: 2rem;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .nav-button {
+    color: #014186;
+    font-size: 1rem;
+    background-color: #eeeeee;
+  }
+
+  nav a:hover {
+    color: #185ea8;
+    text-decoration: underline;
+
+  }
+
+  .nav-button:hover {
+    color: #0056b3;
+    text-decoration: underline;
   }
   
   /* Estilos de formulario */
