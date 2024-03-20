@@ -24,15 +24,18 @@ Install Node.js dependencies and build assets (Processes: Minify and Obfuscation
 
 ## Build
 
-Run `http-server dist/my-app/ --gzip --proxy http://localhost:8080?` to deploy the build on http://localhost:8080.
+Run `ng serve` to deploy the build locally on http://localhost:4200.
 
 ## Using the application
 
 ### Registration: 
-If you don't have an account, click on "Register" within the form. Fill out the new form with your user information and save it. You will be redirected to the authentication page.
+If you don't have an account, click on "Register" or "Register with Google" within the form. Fill out the new form with your user information, or you gmail account and save it. You will be redirected to the authentication page.
 
 ### Authentication: 
-Enter your user information and you will be redirected to the RSS/ATOM Sources page (From now on you will get data by using JWT token from local storage).
+Enter your user information and you will be redirected to the Users management page. Here you can edit the Users data and delete them. (From now on you will get data by using JWT token from local storage). Afterwards, you can come here by clicking on the Home button. 
+
+### Profile:
+Once you are logged, you can click on the Profile button in the navigation menu, so you can take a look on your personal data or edit it.
 
 ### Logout: 
-When you're ready to log out, click on the "Logout" button in the navigation menu. You will be logged out of your account and redirected to the login page.
+When you're ready to log out, click on the Logout button in the navigation menu. You will be logged out of your account and redirected to the login page.
