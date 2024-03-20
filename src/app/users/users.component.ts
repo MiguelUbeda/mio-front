@@ -13,8 +13,8 @@ export class UsersComponent implements OnInit {
   users: User[] = [];
   createFormVisible = false;
   editFormVisible = false;
-  newUser: User = new User(0, '', '', '');
-  selectedUser: User = new User(0, '', '', '');
+  newUser!: User;
+  selectedUser!: User;
   selectedUsers: User[] = [];
   mostrarArticleComponent: any[] = [];
 
@@ -47,7 +47,7 @@ export class UsersComponent implements OnInit {
       if (result === 'saved') {
         const index = this.users.findIndex(user => user.id === userCopy.id);
         this.users[index] = userCopy;
-        this.selectedUser = new User(0, '', '', '');
+        this.selectedUser = new User(0, '', '', '', '');
       }
     });
   }

@@ -9,7 +9,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrls: ['./edit-user.component.css']
 })
 export class EditUserComponent {
-  user: User = new User (0, '', '', '');
+  user!: User;
 
   constructor(private userService: UserService,
     public dialogRef: MatDialogRef<EditUserComponent>,

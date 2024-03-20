@@ -9,12 +9,14 @@
         <th></th>
         <th>Email</th>
         <th>Nombre de usuario</th>
+        <th>Biografía</th>
         <th></th>
       </tr>
       <tr *ngFor="let user of users">
         <td><input type="checkbox" (change)="toggleUserSelection(user)"></td>
         <td class="url-text">{{user.email}}</td>
         <td class="url-text">{{user.username}}</td>
+        <td class="url-text">{{user.biography}}</td>
         <td>
           <button (click)="showEditForm(user)">
             <i class="fas fa-edit"></i>

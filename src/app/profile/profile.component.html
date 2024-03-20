@@ -9,7 +9,12 @@
             <br>
             <mat-form-field appearance="fill">
                 <mat-label>Email</mat-label>
-                <input matInput type="text" name="email" [(ngModel)]="user.email" placeholder="Email">
+                <input matInput type="text" name="email" disabled [(ngModel)]="user.email" placeholder="Email">
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="fill">
+                <mat-label>Biography</mat-label>
+                <input matInput type="text" name="biography" [(ngModel)]="user.biography" placeholder="Biography">
             </mat-form-field>
         </form>
     </div>
