@@ -16,6 +16,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { EditUserComponent } from './edit-user/edit-user.component';
 import { ProfileComponent } from './profile/profile.component';
+import { AuthCallbackComponent } from './auth-callback/auth-callback.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ProfileComponent } from './profile/profile.component';
     UsersComponent,
     LogoutComponent,
     EditUserComponent,
-    ProfileComponent
+    ProfileComponent,
+    AuthCallbackComponent
   ],
   imports: [
     BrowserModule,

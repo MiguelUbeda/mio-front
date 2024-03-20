@@ -9,7 +9,8 @@
       <input type="password" name="password" [(ngModel)]="password">
       <br>
       <button type="submit">Iniciar sesión</button>
-      <!-- Redirect to /Registro -->
+      <!-- Button to login with Google OAuth -->
+      <button type="button" (click)="loginWithGoogle()">Iniciar sesión con Google</button>
       <p>¿Tienes una cuenta? <a routerLink="/registro">Registrarse</a></p>
     </form>
   </div>

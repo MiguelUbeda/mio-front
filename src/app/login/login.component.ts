@@ -12,7 +12,7 @@ export class LoginComponent {
   password: string = "";
 
   constructor(private router: Router, private authService: AuthService) {}
-  // Through authService it will post the form data to the API and will get the JWT token.
+
   login() {
     this.authService.login(this.username, this.password).subscribe(
       (response: any) => {
@@ -26,5 +26,9 @@ export class LoginComponent {
 
       }
     );
+  }
+
+  loginWithGoogle() {
+    window.location.href = `http://localhost:8000/connect/google`;
   }
 }
